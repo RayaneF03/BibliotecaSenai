@@ -1,93 +1,108 @@
-﻿@{
-    ViewData["Title"] = "Home";
-}
-
-<!-- HERO -->
-<div class="container-fluid bg-primary text-light py-5">
+﻿<!-- HERO -->
+<div class="container-fluid bg-primary text-light py-5 mb-5">
     <div class="container text-center">
-        <h1 class="display-4 fw-bold">Sistema de Biblioteca</h1>
-        <p class="lead mt-3">
+
+        <h1 class="display-4 fw-bold mb-3">
+            Sistema de Biblioteca
+        </h1>
+
+        <p class="lead opacity-75 mb-4">
             Gerenciamento de livros, autores e empréstimos
         </p>
 
-        <div class="d-flex justify-content-center gap-3 mt-4">
-            <a href="@Url.Action("Index", "Livros")" class="btn btn-light btn-lg">
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="#" class="btn btn-light btn-lg shadow">
                 📚 Livros
             </a>
-            <a href="@Url.Action("Index", "Autores")" class="btn btn-outline-light btn-lg">
+            <a href="#" class="btn btn-outline-light btn-lg">
                 ✍️ Autores
             </a>
-            <a href="@Url.Action("Index", "Emprestimos")" class="btn btn-outline-light btn-lg">
+            <a href="#" class="btn btn-outline-light btn-lg">
                 🔄 Empréstimos
             </a>
         </div>
+
     </div>
 </div>
 
-<!-- SEÇÕES -->
-<div class="container mt-5">
-
+<!-- CARDS -->
+<div class="container mb-5">
     <div class="row g-4">
 
         <!-- LIVROS -->
         <div class="col-md-4">
-            <div class="card h-100 shadow">
-                <div class="card-body">
-                    <h5 class="card-title">📚 Livros</h5>
-                    <p class="card-text">
+            <div class="card h-100 shadow-sm border-0 card-hover">
+                <div class="card-body text-center p-4">
+
+                    <div class="fs-1 mb-3">📚</div>
+
+                    <h5 class="fw-bold">Livros</h5>
+
+                    <p class="text-muted">
                         Cadastre, edite e visualize os livros disponíveis na biblioteca.
                     </p>
 
-                    <div class="d-flex gap-2">
-                        <a href="@Url.Action("Index", "Livros")" class="btn btn-primary">
+                    <div class="d-flex justify-content-center gap-2">
+                        <a href="#" class="btn btn-primary">
                             Listar
                         </a>
-                        <a href="@Url.Action("Create", "Livros")" class="btn btn-outline-primary">
+                        <a href="#" class="btn btn-outline-primary">
                             Novo
                         </a>
                     </div>
+
                 </div>
             </div>
         </div>
 
         <!-- AUTORES -->
         <div class="col-md-4">
-            <div class="card h-100 shadow">
-                <div class="card-body">
-                    <h5 class="card-title">✍️ Autores</h5>
-                    <p class="card-text">
+            <div class="card h-100 shadow-sm border-0 card-hover">
+                <div class="card-body text-center p-4">
+
+                    <div class="fs-1 mb-3">✍️</div>
+
+                    <h5 class="fw-bold">Autores</h5>
+
+                    <p class="text-muted">
                         Gerencie os autores relacionados aos livros.
                     </p>
 
-                    <div class="d-flex gap-2">
-                        <a href="@Url.Action("Index", "Autores")" class="btn btn-primary">
+                    <div class="d-flex justify-content-center gap-2">
+                        <a href="#" class="btn btn-primary">
                             Listar
                         </a>
-                        <a href="@Url.Action("Create", "Autores")" class="btn btn-outline-primary">
+                        <a href="#" class="btn btn-outline-primary">
                             Novo
                         </a>
                     </div>
+
                 </div>
             </div>
         </div>
 
         <!-- EMPRÉSTIMOS -->
         <div class="col-md-4">
-            <div class="card h-100 shadow">
-                <div class="card-body">
-                    <h5 class="card-title">🔄 Empréstimos</h5>
-                    <p class="card-text">
+            <div class="card h-100 shadow-sm border-0 card-hover">
+                <div class="card-body text-center p-4">
+
+                    <div class="fs-1 mb-3">🔄</div>
+
+                    <h5 class="fw-bold">Empréstimos</h5>
+
+                    <p class="text-muted">
                         Controle de empréstimos e devoluções dos livros.
                     </p>
 
-                    <div class="d-flex gap-2">
-                        <a href="@Url.Action("Index", "Emprestimos")" class="btn btn-primary">
+                    <div class="d-flex justify-content-center gap-2">
+                        <a href="#" class="btn btn-primary">
                             Listar
                         </a>
-                        <a href="@Url.Action("Create", "Emprestimos")" class="btn btn-outline-primary">
+                        <a href="#" class="btn btn-outline-primary">
                             Novo
                         </a>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -95,8 +110,8 @@
     </div>
 </div>
 
-<!-- RODAPÉ -->
-<footer class="container text-center mt-5 text-muted">
+<!-- FOOTER DA HOME -->
+<div class="container text-center text-muted">
     <hr />
     <p>Projeto acadêmico – ASP.NET MVC</p>
-</footer>
+</div>
