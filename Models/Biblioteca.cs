@@ -7,5 +7,6 @@
         public string Endereco { get; set; }
         public string Telefone { get; set; }
         public int Quantidade { get; set; }
+
     }
 }
