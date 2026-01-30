@@ -8,5 +8,6 @@
         public string Genero { get; set; }
         public int AnoPublicacao { get; set; }
         public string Editora { get; set; }
+        public bool Disponivel { get; set; }
     }
 }
