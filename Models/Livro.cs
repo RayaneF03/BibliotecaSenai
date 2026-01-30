@@ -10,7 +10,5 @@
         public string Editora { get; set; }
         public bool Disponivel { get; set; } = false;
 
-        public int AlunosId { get; set; }
-        public Alunos? Alunos { get; set; }
     }
 }
