@@ -1,65 +1,15 @@
 ﻿@model IEnumerable<BibliotecaSenai.Models.Livro>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Livros";
 }
 
-<h1>Index</h1>
+<div class="container mt-4">
+    <h2>📚 Lista de Livros</h2>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Titulo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Autor)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Genero)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.AnoPublicacao)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Editora)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Disponivel)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Titulo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Autor)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Genero)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AnoPublicacao)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Editora)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Disponivel)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.LivroId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.LivroId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.LivroId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <a asp-action="Create" class="btn btn-primary mb-3">
+        Novo Livro
+    </a>
+
+    <p>Aqui vai a lista de livros.</p>
+</div>
