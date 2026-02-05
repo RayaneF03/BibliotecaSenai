@@ -11,13 +11,13 @@
         </p>
 
         <div class="d-flex justify-content-center gap-3 flex-wrap">
-            <a href="#" class="btn btn-light btn-lg shadow">
+            <a asp-controller="Livros" asp-action="Index" class="btn btn-light btn-lg shadow">
                 📚 Livros
             </a>
-            <a href="#" class="btn btn-outline-light btn-lg">
+            <a asp-controller="Autores" asp-action="Index" class="btn btn-outline-light btn-lg">
                 ✍️ Autores
             </a>
-            <a href="#" class="btn btn-outline-light btn-lg">
+            <a asp-controller="Emprestimos" asp-action="Index" class="btn btn-outline-light btn-lg">
                 🔄 Empréstimos
             </a>
         </div>
@@ -43,10 +43,10 @@
                     </p>
 
                     <div class="d-flex justify-content-center gap-2">
-                        <a href="../Views/Livros/Index.cshtml" class="btn btn-primary">
+                        <a asp-controller="Livros" asp-action="Details" class="btn btn-primary">
                             Listar
                         </a>
-                        <a href="../Views/Livros/Index.cshtml" class="btn btn-outline-primary">
+                        <a asp-controller="Livros" asp-action="Create" class="btn btn-outline-primary">
                             Novo
                         </a>
                     </div>
@@ -69,10 +69,10 @@
                     </p>
 
                     <div class="d-flex justify-content-center gap-2">
-                        <a href="../Views/Bibliotecas/Index.cshtml" class="btn btn-primary">
+                        <a asp-controller="Autores" asp-action="Details" class="btn btn-primary">
                             Listar
                         </a>
-                        <a href="../Views/Bibliotecas/Index.cshtml" class="btn btn-outline-primary">
+                        <a asp-controller="Autores" asp-action="Create" class="btn btn-outline-primary">
                             Novo
                         </a>
                     </div>
@@ -95,10 +95,10 @@
                     </p>
 
                     <div class="d-flex justify-content-center gap-2">
-                        <a href="../Views/Alunos/Index.cshtml" class="btn btn-primary">
+                        <a asp-controller="Emprestimos" asp-action="Details" class="btn btn-primary">
                             Listar
                         </a>
-                        <a href="../Views/Alunos/Index.cshtml" class="btn btn-outline-primary">
+                        <a asp-controller="Emprestimos" asp-action="Create" class="btn btn-outline-primary">
                             Novo
                         </a>
                     </div>
